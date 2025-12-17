@@ -1,10 +1,10 @@
 @echo off
-setlocal EnableExtensions
 
 REM -------------------------------
 REM Environment
 REM -------------------------------
-set DEV_ROOT=D:\dev
+set DEV_ROOT=G:\dev
+set VCPKG_ROOT=G:\dev\vcpkg
 
 REM -------------------------------
 REM DOSKEY macros (fake functions)
