@@ -11,16 +11,20 @@ Install CMake from [here](https://cmake.org/) and add it to your PATH at install
 
 ## Terminal
 
-Install WezTerm from [here](https://wezterm.org/index.html).
+Configure vscode as follows:
 
-```ps1
-$src = Join-Path $(Get-Item .).FullName wezterm
-$tgt = Join-Path $env:userprofile .config/wezterm
-Copy-Item -Path $src -Destination $tgt -Recurse
+```json
+"terminal.integrated.profiles.windows": {
+  "Command Prompt": {
+      "path": [
+          "${env:windir}\\Sysnative\\cmd.exe",
+          "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": ["/k", "G:\\dev\\my-windows-shell\\cmd\\devshell.bat"],
+      "icon": "terminal-cmd"
+  },
+}
 ```
-
-Install fonts:
-
-- [Fira Code NerdFonts](https://www.nerdfonts.com/)
-- [Monaspace Radon](https://github.com/githubnext/monaspace/releases/tag/v1.301)
-- [Monaspace Krypton](https://github.com/githubnext/monaspace/releases/tag/v1.301)
+```json
+"terminal.integrated.defaultProfile.windows": "Command Prompt"
+```
