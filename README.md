@@ -28,3 +28,14 @@ Configure vscode as follows:
 ```json
 "terminal.integrated.defaultProfile.windows": "Command Prompt"
 ```
+
+Then press Ctrl+Shift+P, look for Keyboard shortcuts and open the JSON:
+
+```json
+{
+  "key": "ctrl+l",
+  "command": "workbench.action.terminal.sendSequence",
+  "args": { "text": "cls\u000D" },
+  "when": "terminalFocus"
+}
+```
