@@ -43,3 +43,9 @@ Then press Ctrl+Shift+P, look for Keyboard shortcuts and open the JSON:
 # VCPKG
 
 Clone https://github.com/microsoft/vcpkg to your %DEV_ROOT%
+
+```
+dev
+cd vcpkg
+bootstrap.bat
+```
