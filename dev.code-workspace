@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../arduboy-manager"
+		},
+		{
+			"path": "../vcpkg"
+		},
+		{
+			"path": "../xdm1041-gui"
 		}
 	],
 	"settings": {}

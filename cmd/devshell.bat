@@ -1,6 +1,11 @@
 @echo off
 
 REM -------------------------------
+REM Visual Studio toolchain
+REM -------------------------------
+call "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat"
+
+REM -------------------------------
 REM Environment
 REM -------------------------------
 set DEV_ROOT=G:\dev
@@ -22,8 +27,3 @@ doskey cmake_debug=cmake.exe -G "NMake Makefiles JOM" --preset w32-debug $*
 
 REM runps: execute a powershell script
 doskey runps=powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$1" $*
-
-REM -------------------------------
-REM Visual Studio toolchain
-REM -------------------------------
-call "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat"
